@@ -14,10 +14,11 @@ header {
 
 header h1 {
     margin: 0;
+    margin-bottom: 0;
 }
 
 section {
-    padding: 2rem;
+    padding: 1rem;
     margin: 1rem auto;
     max-width: 800px;
 }
@@ -25,6 +26,7 @@ section {
 section h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
+    border: none;
 }
 
 ul {
@@ -43,4 +45,91 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+
+
+.education {
+    max-width: 600px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.education h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.degree {
+    margin-bottom: 10px;
+}
+
+.degree i {
+    color: #333;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.degree-title {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.institution {
+    display: block;
+    font-size: 1em;
+    color: #999;
+    margin-left: 28px; /* adjust based on icon size */
+}
+
+
+
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 1;
+    max-width: 420px;
+    margin-right: 20px;
+}
+
+.right-column {
+    flex: 2;
+    padding-left: 20px;
+}
+
+
+
+/* Style for right column sections */
+.right-column section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.right-column h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.left-column section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 0px;
+
+}
+
+
+
+#papers .coauthors{
+    font-size: 0.85em;
 }

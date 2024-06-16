@@ -5,38 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan Mosqueda</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Jordán Mosqueda Juárez</h1>
-        <img src="profile_pic_bw.jpeg" style="width:260px; height:auto;">
-        <p>PhD Candidate in Economics</p>
-        <p>University of California San Diego</p>
-        <p>jmosqued@ucsd.edu</p>
-    </header>
-    <header>
-        <p>Find my CV here:</p>
-        <p><a href="CV.pdf" target="_blank">Download CV</a></p>
-    </header>    
-    <section id="research-interests">
-        <h2>research interests</h2>
-        <p> trade/spatial, economic geography, macroeconomics, development </p>
-    </section>
-    <section id="work in progress">
-        <h2>work in progress</h2>
-        <ul>
-            <li> Private Transportation Markets and Endogenous Commuting Costs: Theory and Evidence From Mexico City</li>
-            <li> Domestic Trade Frictions, with Alfonso Cebreros </li>
-            <!-- Add more papers as needed -->
-        </ul>
-    </section>
-    <section id="working papers">
-        <h2>working papers</h2>
-        <ul>
-            <li><a href="https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/%7BC3F5360B-39DC-6710-05F3-BC8042F81E7E%7D.pdf" target="_blank">Comeptition and Coordination in the Mexican Retail Market for Gasoline</a>, with Benjamín Contreras, René Leal, and Alejandrina Salcedo. Banco de México Working Papers N. 2020-15</li>
-            <!-- Add more papers as needed -->
-        </ul>
-    </section>
+    <div class="container">
+        <div class="left-column">
+            <header>
+                <h1>Jordán Mosqueda Juárez</h1>
+                <img src="profile_pic_bw.jpeg" style="width:260px; height:auto;">
+            </header>
+            <section class="education">
+                <div class="degree">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="degree-title">Ph.D. Candidate in Economics, 2020 -</span>
+                    <span class="institution">University of California San Diego</span>
+                </div>
+                <div class="degree">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="degree-title">B.A. in Economics, 2013 - 2017</span>
+                    <span class="institution">Instituto Tecnológico Autónomo de México (ITAM)</span>
+                </div>
+                <p>Find my CV <a href="CV.pdf" target="_blank">here</a></p>
+                <p>Contact me at: jmosqued@ucsd.edu</p>
+            </section>   
+        </div>
+        <div class="right-column">
+            <!-- Other sections go here -->
+            <section id="research-interests">
+                <p> I'm a PhD Candidate in Economics at the University of California San Diego. I'm interested in studying frictions 
+                    that prevent the smooth flow of agents and goods across space.    </p>
+                <p> Before coming to UCSD, I worked at the General Directorate of Economic Research in the Bank of Mexico. There, I did research
+                    on the industrial organization of the energy sector. </p>
+                <p> Research interests: trade/spatial, macroeconomics, development.</p> 
+            </section>
+            <section id="papers">
+                <h2>Work in progress</h2>
+                <ul>
+                    <li> Private Transportation Markets and Endogenous Commuting Costs: Theory and Evidence From Mexico City</li>
+                    <li> Domestic Trade Frictions: Road Insecurity in Mexico, <span class="coauthors"> with Alfonso Cebreros </span> </li>
+                    <!-- Add more papers as needed -->
+                </ul>
+            </section>
+            <section id="papers">
+                <h2>Working papers</h2>
+                <ul>
+                    <li><a href="https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/%7BC3F5360B-39DC-6710-05F3-BC8042F81E7E%7D.pdf" target="_blank">Competition and Coordination in the Mexican Retail Market for Gasoline</a>, <span class="coauthors"> with Benjamín Contreras, René Leal, and Alejandrina Salcedo. Banco de México Working Papers N. 2020-15  </span></li>
+                    <!-- Add more papers as needed -->
+                </ul>
+            </section>
+        </div>
+    </div>
+
 
 </body>
 </html>
