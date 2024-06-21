@@ -6,59 +6,27 @@ body {
 }
 
 header {
-    background: #ffffff;
-    color: #000000;
-    padding: 1rem 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
-header h1 {
-    margin: 0;
-    margin-bottom: 0;
-}
-
-section {
-    padding: 1rem;
-    margin: 1rem auto;
-    max-width: 800px;
-}
-
-section h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
-    border: none;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 0.5rem 0;
-}
-
-a {
-    color: #0066cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+.header-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px; /* Adjust this width to your preference */
 }
 
 
-
-.education {
-    max-width: 600px;
-    padding: 10px;
-    background-color: #fff;
+.left {
+    margin-right: 20px;
+    max-width: 350px; /* Ensure the image section doesn't overflow */
 }
 
-.education h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333;
+.right {
+    max-width: 600px; /* Adjust the width as needed */
 }
 
 .degree {
@@ -66,68 +34,44 @@ a:hover {
 }
 
 .degree i {
-    color: #333;
-    margin-right: 10px;
-    font-size: 1.1em;
+    margin-right: 5px;
 }
 
 .degree-title {
-    font-size: 1em;
     font-weight: bold;
-    color: #333;
+    font-size: small;
+    display: block;
 }
 
 .institution {
     display: block;
-    font-size: 1em;
-    color: #999;
-    margin-left: 28px; /* adjust based on icon size */
-}
-
-
-
-
-.container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.left-column {
-    flex: 1;
-    max-width: 420px;
-    margin-right: 20px;
-}
-
-.right-column {
-    flex: 2;
-    padding-left: 20px;
-}
-
-
-
-/* Style for right column sections */
-.right-column section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    font-size:small;
+    color: grey;
 
 }
 
-.right-column h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    border: none;
 }
 
-.left-column section {
-    background-color: #fff;
-    padding: 20px;
+section {
+    padding-top: 0px;
+    margin: 1rem auto;
+    max-width: 1000px;
     margin-top: 0px;
-
 }
 
+
+
+#papers ul li {
+    font-family: 'Arial', sans-serif; /* Change to your preferred font */
+    color: #525252;
+    font-size: 20px;
+    font-style: italic; /* Adjust the font size as needed */
+}
 
 
 #papers .coauthors{
