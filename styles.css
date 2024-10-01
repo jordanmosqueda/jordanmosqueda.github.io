@@ -5,6 +5,7 @@ body {
     padding: 0;
 }
 
+/* Ensure header and main content respond to screen size */
 header {
     display: flex;
     flex-direction: column;
@@ -16,17 +17,19 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    max-width: 1200px; /* Adjust this width to your preference */
+    max-width: 1200px; /* Desktop max width */
+    width: 100%; /* Ensure full width on smaller screens */
 }
-
 
 .left {
     margin-right: 20px;
     max-width: 350px; /* Ensure the image section doesn't overflow */
+    width: 100%; /* Make it flexible for mobile */
 }
 
 .right {
     max-width: 600px; /* Adjust the width as needed */
+    width: 100%; /* Flexible width */
 }
 
 .degree {
@@ -45,11 +48,9 @@ header {
 
 .institution {
     display: block;
-    font-size:small;
+    font-size: small;
     color: grey;
-
 }
-
 
 section h2 {
     border-bottom: 2px solid #333;
@@ -64,8 +65,6 @@ section {
     margin-top: 0px;
 }
 
-
-
 #papers ul li {
     font-family: 'Arial', sans-serif; /* Change to your preferred font */
     color: #525252;
@@ -73,7 +72,42 @@ section {
     font-style: italic; /* Adjust the font size as needed */
 }
 
-
-#papers .coauthors{
+#papers .coauthors {
     font-size: 0.85em;
+}
+
+/* Responsive Design - For screens smaller than 600px (mobile devices) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Slightly smaller font size on mobile */
+    }
+
+    .header-content {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        margin: 0;
+        padding: 10px;
+    }
+
+    .left, .right {
+        max-width: 100%; /* Ensure full width on mobile */
+        margin-right: 0;
+    }
+
+    header {
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%; /* Full width for sections */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading sizes on mobile */
+    }
+
+    #papers ul li {
+        font-size: 18px; /* Slightly smaller font for better readability on mobile */
+    }
 }
