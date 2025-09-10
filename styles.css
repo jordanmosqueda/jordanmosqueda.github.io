@@ -5,6 +5,12 @@ body {
     padding: 0;
 }
 
+.container {
+    max-width: 1000px;  /* consistent width */
+    margin: 0 auto;     /* centers everything */
+    padding: 0 20px;    /* left/right breathing room */
+}
+
 /* Ensure header and main content respond to screen size */
 header {
     display: flex;
@@ -15,21 +21,22 @@ header {
 
 .header-content {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    max-width: 1200px; /* Desktop max width */
-    width: 100%; /* Ensure full width on smaller screens */
+    align-items: flex-start;   /* align items to the top */
+    justify-content: flex-start;
+    max-width: 1200px;
+    width: 100%;
 }
 
 .left {
-    margin-right: 20px;
-    max-width: 350px; /* Ensure the image section doesn't overflow */
-    width: 100%; /* Make it flexible for mobile */
+    margin-right: 15px;
+    flex: 1;               /* photo takes 1 share of space */
+    max-width: 280px;      /* keeps image from getting too big */
 }
 
 .right {
-    max-width: 400px; /* Adjust the width as needed */
-    width: 100%; /* Flexible width */
+    margin-left: 15px;
+    flex: 1.5;               /* text takes 2 shares of space */
+    max-width: none;       /* let text flow naturally */
 }
 
 .degree {
@@ -83,14 +90,17 @@ section {
     }
 
     .header-content {
-        flex-direction: column; /* Stack elements vertically on mobile */
-        margin: 0;
-        padding: 10px;
+        flex-direction: column;   /* stack vertically */
+        align-items: center;      /* center image + text */
     }
 
     .left, .right {
-        max-width: 100%; /* Ensure full width on mobile */
-        margin-right: 0;
+        max-width: 100%;          /* full width */
+        margin: 0 0 15px 0;       /* spacing between stacked items */
+    }
+
+    .right {
+        text-align: center;       /* center description text */
     }
 
     header {
@@ -110,4 +120,41 @@ section {
     #papers ul li {
         font-size: 18px; /* Slightly smaller font for better readability on mobile */
     }
+}
+
+
+
+nav {
+    /*border-bottom: 1px solid #ccc; /* thin grey line */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #0073e6; /* hover color */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
 }
