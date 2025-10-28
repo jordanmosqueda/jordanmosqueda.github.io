@@ -79,6 +79,12 @@ section {
     font-style: italic; /* Adjust the font size as needed */
 }
 
+.teaching ul li {
+    font-family: 'Arial', sans-serif; /* Change to your preferred font */
+    color: #525252;
+    font-size: 20px;
+}
+
 #papers .coauthors {
     font-size: 0.85em;
 }
