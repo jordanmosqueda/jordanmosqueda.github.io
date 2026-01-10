@@ -21,7 +21,7 @@ header {
 
 .header-content {
     display: flex;
-    align-items: flex-start;   /* align items to the top */
+    align-items: center;   /* align items to the top */
     justify-content: flex-start;
     max-width: 1200px;
     width: 100%;
@@ -163,4 +163,8 @@ hr {
     border: none;
     border-top: 1px solid #ccc;
     margin: 10px 0;
+}
+
+.u{
+  text-decoration: underline;
 }
